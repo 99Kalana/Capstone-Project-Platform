@@ -22,7 +22,12 @@ module.exports = {
   apps: [
       {
           name: "config-server",
-          script: "java -jar ./config-server/target/Config-Server-1.0.0.jar",
+          script: "java",
+          // Force IPv4 and Tiered Compilation to stop the hang
+          args: "-Djava.net.preferIPv4Stack=true -XX:TieredStopAtLevel=1 -jar ./config-server/target/Config-Server-1.0.0.jar",
+          env: {
+              SPRING_PROFILES_ACTIVE: "git"
+          },
           log_file: "./logs/config-server.log"
       },
       {
