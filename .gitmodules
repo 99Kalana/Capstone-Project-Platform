@@ -6,4 +6,4 @@
 	url = https://github.com/ITS-2130-ECA-HDSE-69-70/Capstone-Project-Platform-Service-Registry.git
 [submodule "config-server"]
 	path = config-server
-	url = https://github.com/ITS-2130-ECA-HDSE-69-70/Capstone-Project-Platform-Config-Server.git
+	url = https://github.com/99Kalana/Capstone-Project-Platform-Config-Server.git
