@@ -34,4 +34,6 @@ jobs:
               --command "echo ' Connected to vm-platform-seed successfully!' &&
               cd Capstone-Project-Platform/
             " 
+
+  ##
             
